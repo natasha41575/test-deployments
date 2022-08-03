@@ -4,7 +4,9 @@ metadata: # kpt-merge: /disable-https
   name: disable-https
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'fn.kpt.dev|StarlarkRun|default|disable-https'
+    internal.kpt.dev/upstream-identifier: fn.kpt.dev|StarlarkRun|default|disable-https
+  labels:
+    app.kubernetes.io/name: ghost-app
 source: |-
   def disable_https(resources):
     for resource in resources:
