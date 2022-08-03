@@ -6,7 +6,7 @@ metadata: # kpt-merge: example/ghost-app
   labels:
     app.kubernetes.io/name: ghost-app
   annotations:
-    internal.kpt.dev/upstream-identifier: networking.k8s.io|Ingress|example|ghost-app
+    internal.kpt.dev/upstream-identifier: 'networking.k8s.io|Ingress|example|ghost-app'
 spec:
   ingressClassName: nginx
   rules:
