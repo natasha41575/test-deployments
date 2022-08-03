@@ -6,7 +6,7 @@ metadata: # kpt-merge: example/ghost-app
   labels:
     app.kubernetes.io/name: ghost-app
   annotations:
-    internal.kpt.dev/upstream-identifier: 'apps|Deployment|example|ghost-app'
+    internal.kpt.dev/upstream-identifier: apps|Deployment|example|ghost-app
 spec:
   replicas: 1
   strategy:
