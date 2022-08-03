@@ -4,7 +4,7 @@ metadata: # kpt-merge: /validate-blog-host
   name: validate-blog-host
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: fn.kpt.dev|StarlarkRun|default|validate-blog-host
+    internal.kpt.dev/upstream-identifier: 'fn.kpt.dev|StarlarkRun|default|validate-blog-host'
   labels:
     app.kubernetes.io/name: ghost-app
 source: |-
