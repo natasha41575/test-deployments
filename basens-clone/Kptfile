@@ -1,0 +1,22 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /basens-clone
+  name: basens-clone
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|basens-clone'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/natasha41575/kpt-samples.git
+    directory: basens
+    ref: drafts/basens/v0
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/natasha41575/kpt-samples.git
+    directory: basens
+    ref: drafts/basens/v0
+    commit: 60872e7b8248bc88810f1939e2d0b3e71012971c
+info:
+  description: basens description
