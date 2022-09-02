@@ -1,0 +1,22 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /test-copy
+  name: test-copy
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|test-copy'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/natasha41575/test-deployments.git
+    directory: test
+    ref: test/v2
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/natasha41575/test-deployments.git
+    directory: test
+    ref: test/v2
+    commit: 02c8d04a7db55930a651768afa4fec1a82761a01
+info:
+  description: sample description
